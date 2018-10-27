@@ -41,3 +41,76 @@
 		}
 	}
 }
+
+.navbar{
+	background-color: #5B3E89;
+	button{
+		border-color: transparent;
+		.fa.fa-navicon {
+		  color:white;
+		}
+	}
+	.form-inline{
+		width: 75%;
+		.searching{
+			background-image: url(../img/buscador.png);
+		    background-position: right;
+		    background-size: 17px;
+		    height: 30px;
+		    background-repeat: no-repeat;
+		    font-family: AvenirR;
+		    font-size: 11px;
+		    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+			    font-family: AvenirR;
+			}
+			:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			    font-family: AvenirR;
+			}
+
+			::-ms-input-placeholder { /* Microsoft Edge */
+			    font-family: AvenirR;
+			}
+		}
+	}
+}
+
+.container-fluid{
+	font-family: AvenirR;
+	.item{
+		img{
+			width: 100%;
+		}
+	}
+	.list-menu{
+		padding: 0px;
+	    list-style-type: none;
+	    font-size: 10px;
+	    text-transform: uppercase;
+	    margin: 5px 0px;
+	    li{
+	    	background: #e7c0b4;
+	    	margin-bottom: 1px;
+	    	color: white;
+	    }
+	}
+	.club{
+		font-size: 14px;
+		color: white;
+		display: table;
+		height: 100%;
+		p{
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
+.no-padding{
+	padding: 0px;
+}
+
+.bg-orange{
+	background: #E75255;
+}
+.bg-orange-light{
+	background: #E47868;
+}
