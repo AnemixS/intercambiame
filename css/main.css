@@ -43,4 +43,62 @@
         vertical-align: text-top;
         padding-left: 7px; }
 
+.navbar {
+  background-color: #5B3E89; }
+  .navbar button {
+    border-color: transparent; }
+    .navbar button .fa.fa-navicon {
+      color: white; }
+  .navbar .form-inline {
+    width: 75%; }
+    .navbar .form-inline .searching {
+      background-image: url(../img/buscador.png);
+      background-position: right;
+      background-size: 17px;
+      height: 30px;
+      background-repeat: no-repeat;
+      font-family: AvenirR;
+      font-size: 11px; }
+      .navbar .form-inline .searching ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-family: AvenirR; }
+      .navbar .form-inline .searching :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        font-family: AvenirR; }
+      .navbar .form-inline .searching ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        font-family: AvenirR; }
+
+.container-fluid {
+  font-family: AvenirR; }
+  .container-fluid .item img {
+    width: 100%; }
+  .container-fluid .list-menu {
+    padding: 0px;
+    list-style-type: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 5px 0px; }
+    .container-fluid .list-menu li {
+      background: #e7c0b4;
+      margin-bottom: 1px;
+      color: white; }
+  .container-fluid .club {
+    font-size: 14px;
+    color: white;
+    display: table;
+    height: 100%; }
+    .container-fluid .club p {
+      display: table-cell;
+      vertical-align: middle; }
+
+.no-padding {
+  padding: 0px; }
+
+.bg-orange {
+  background: #E75255; }
+
+.bg-orange-light {
+  background: #E47868; }
+
 /*# sourceMappingURL=main.css.map */
