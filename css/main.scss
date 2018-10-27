@@ -6,33 +6,37 @@
 
 .header{
 	background: #fff;
-	/* height: 100px; */
+	height: 90px;
+	padding: 30px;
 	.logo-principal{
 		background-image: url("../img/logo.png");
-		width: 250px;
-		height: 50px;
+		width: 240px;
+		height: 40px;
 		background-size: contain;
 		background-repeat: no-repeat;
 		float: left;
 	}
 	.logo-car{
-		background-image: url("../img/carrito.png");
-		width: 50px;
-		height: 50px;
-		background-size: contain;
-		background-repeat: no-repeat;
-		float: right;
+		background-image: url(../img/carrito.png);
+	    width: 45px;
+	    height: 45px;
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    float: right;
+	    margin-top: -4px;
 		.circle-buy{
-			width: 30px;
-			height: 30px;
+			width: 20px;
+			height: 20px;
 			background: #AFC75A;
 			border-radius: 50%;
 		    position: absolute;
-		    right: 0px;
-		    top: 10px;
+		    right: 22px;
+		    top: 22px;
 		    span{
-		    	font-size: 18px;
-		    	color: white;
+		    	font-size: 12px;
+			    color: white;
+			    vertical-align: text-top;
+			    padding-left: 7px;
 		    }
 		}
 	}
