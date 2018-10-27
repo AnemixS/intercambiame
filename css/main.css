@@ -10,5 +10,33 @@
 @font-face {
   font-family: AvenirR;
   src: url("../fonts/AvenirNext-Regular.ttf"); }
+.header {
+  background: #fff;
+  /* height: 100px; */ }
+  .header .logo-principal {
+    background-image: url("../img/logo.png");
+    width: 250px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left; }
+  .header .logo-car {
+    background-image: url("../img/carrito.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right; }
+    .header .logo-car .circle-buy {
+      width: 30px;
+      height: 30px;
+      background: #AFC75A;
+      border-radius: 50%;
+      position: absolute;
+      right: 0px;
+      top: 10px; }
+      .header .logo-car .circle-buy span {
+        font-size: 18px;
+        color: white; }
 
 /*# sourceMappingURL=main.css.map */

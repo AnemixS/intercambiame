@@ -3,3 +3,37 @@
 @font-face {font-family: AvenirDemi; src: url("../fonts/AvenirNext-DemiBold.ttf")}
 @font-face {font-family: AvenirM; src: url("../fonts/AvenirNext-Medium.ttf")}
 @font-face {font-family: AvenirR; src: url("../fonts/AvenirNext-Regular.ttf")}
+
+.header{
+	background: #fff;
+	/* height: 100px; */
+	.logo-principal{
+		background-image: url("../img/logo.png");
+		width: 250px;
+		height: 50px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		float: left;
+	}
+	.logo-car{
+		background-image: url("../img/carrito.png");
+		width: 50px;
+		height: 50px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		float: right;
+		.circle-buy{
+			width: 30px;
+			height: 30px;
+			background: #AFC75A;
+			border-radius: 50%;
+		    position: absolute;
+		    right: 0px;
+		    top: 10px;
+		    span{
+		    	font-size: 18px;
+		    	color: white;
+		    }
+		}
+	}
+}
