@@ -103,7 +103,8 @@ body {
       vertical-align: middle; }
   .container-fluid .box-sell {
     background: #EEF0F2;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding: 10px 0px; }
     .container-fluid .box-sell.purple p {
       color: #564A8A; }
     .container-fluid .box-sell.purple .img-fluid {
@@ -131,13 +132,15 @@ body {
       .container-fluid .box-sell .figure .figure-caption {
         font-family: AvenirM;
         font-size: 12px;
-        text-align: center; }
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 39px; }
         .container-fluid .box-sell .figure .figure-caption span {
           color: #AEC65A;
           font-size: 15px; }
-      .container-fluid .box-sell .figure:first-of-type .img-fluid {
-        margin-left: 39px;
-        margin-right: 0px; }
+      .container-fluid .box-sell .figure:first-of-type .img-fluid, .container-fluid .box-sell .figure:first-of-type .figure-caption {
+        margin-left: 39px !important;
+        margin-right: 0px !important; }
   .container-fluid .box-info {
     color: white;
     font-family: seansProR; }
@@ -235,5 +238,14 @@ body {
 
 .bg-gray {
   background: #E1E2E2; }
+
+.carousel .round-icon {
+  background: gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px; }
+  .carousel .round-icon span {
+    width: 13px;
+    height: 13px; }
 
 /*# sourceMappingURL=main.css.map */

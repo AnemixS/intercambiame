@@ -112,6 +112,7 @@ body{
 	.box-sell{
 		background: #EEF0F2;
 		margin-bottom: 10px;
+		padding: 10px 0px;
 		&.purple{
 			p{
 				color: #564A8A;
@@ -149,15 +150,17 @@ body{
 				font-family: AvenirM;
 				font-size: 12px;
 				text-align: center;
+				margin-left: 0px;
+			    margin-right: 39px;
 				span{
 					color: #AEC65A;
 					font-size: 15px;
 				}
 			}
 			&:first-of-type{
-				.img-fluid{
-					margin-left: 39px;
-			    	margin-right: 0px;
+				.img-fluid, .figure-caption{
+					margin-left: 39px!important;
+			    	margin-right: 0px!important;
 				}
 			}
 		}
@@ -285,4 +288,17 @@ body{
 
 .bg-gray{
 	background: #E1E2E2;
+}
+
+.carousel{
+	.round-icon{
+		background: gray;
+	    border-radius: 50%;
+	    width: 20px;
+	    height: 20px;
+	    span{
+			width: 13px;
+			height: 13px;
+	    }
+	}
 }
