@@ -8,6 +8,8 @@
 
 body{
 	background: white;
+	overflow-x: hidden;
+	width: 100%;
 }
 .header{
 	background: #fff;
@@ -16,7 +18,7 @@ body{
 	width: 100%;
 	.logo-principal{
 		background-image: url("../img/logo.png");
-		width: 240px;
+		width: 200px;
 		height: 40px;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -51,7 +53,7 @@ body{
 .navbar{
 	background-color: #5B3E89;
 	button{
-		border-color: transparent;
+		border-color: transparent!important;
 		.fa.fa-navicon {
 		  color:white;
 		}
@@ -82,6 +84,17 @@ body{
 
 .container-fluid{
 	font-family: AvenirR;
+	#wrapper-section{
+		.carousel-indicators{
+			bottom: 0px;
+    		margin: 5px;
+			li{
+				border-radius: 50%;
+			    width: 8px;
+			    height: 8px;
+			}
+		}
+	}
 	.item{
 		img{
 			width: 100%;
@@ -94,19 +107,21 @@ body{
 	    text-transform: uppercase;
 	    margin: 5px 0px;
 	    li{
-	    	background: #e7c0b4;
 	    	margin-bottom: 1px;
 	    	color: white;
 	    }
 	}
-	.club{
-		font-size: 14px;
-		color: white;
-		display: table;
-		height: 100%;
-		p{
-			display: table-cell;
-			vertical-align: middle;
+	.bg-orange-light{
+		width: 100%;
+		.club{
+			font-size: 14px;
+			color: white;
+			height: 100%;
+			padding-left: 5px;
+			padding-right: 5px;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
 		}
 	}
 	.box-sell{
@@ -169,8 +184,7 @@ body{
 		color: white;
 		font-family: seansProR;
 		.bg-purple{
-			padding-top: 15px;
-    		padding-bottom: 15px;
+			padding: 15px 30px;
 			p{
 				margin-bottom: 0px;
 				&.ico-phone{
@@ -188,6 +202,9 @@ body{
 					padding-left: 25px;
 				}
 			}
+			.separator{
+				bottom: -18px;
+			}
 		}
 		.box-pays{
 			height: 100px;
@@ -199,27 +216,27 @@ body{
 				margin-top: 12px;
 			}
 			.icon-pago{
-				width: 70px;
-				height: 30px;
-				display: inline-block;
-				background-repeat: no-repeat;
-				background-position: center;
-				background-size: contain;
-				margin-bottom: 10px;
+				width: 80px;
+			    height: 30px;
+			    display: inline-flex;
+			    background-repeat: no-repeat;
+			    background-position: center;
+			    background-size: contain;
+			    margin-bottom: 20px;
 				&.visa{
-					background-image: url('../img/ico-visa.svg');
+					background-image: url('../img/visa.svg');
 				}
 				&.paypal{
-					background-image: url('../img/ico-paypal.svg');
+					background-image: url('../img/paypal.svg');
 				}
 				&.mastercard{
-					background-image: url('../img/ico-visa.svg');
+					background-image: url('../img/mastercard.svg');
 				}
 				&.american{
-					background-image: url('../img/ico-american.svg');
+					background-image: url('../img/american.svg');
 				}
 				&.oxxo{
-					background-image: url('../img/ico-oxxo.svg');
+					background-image: url('../img/oxxo.svg');
 				}
 			}
 		}
@@ -239,14 +256,26 @@ body{
 				font-family: seansProR;
 				color: #848484;
 				padding: 15px;
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 			}
 			button{
 				color: white;
-				padding: 20px;
-				font-size: 16px;
-				border-radius: 5px;
-    			border: none;
+			    padding: 10px;
+			    font-size: 16px;
+			    border-radius: 5px;
+			    border: none;
+			    bottom: 10px;
+			    position: absolute;
+			    width: 119px;
+    		}
+    		.redes-sociales{
+    			margin-bottom: 10px;
+			    img{
+	    			width:40px;
+	    			height:40px;
+	    			display: inline-flex;
+	    			margin: 0px 4px;
+	    		}
     		}
 		}
 	}
@@ -301,4 +330,16 @@ body{
 			height: 13px;
 	    }
 	}
+}
+
+.separator{
+	width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 5px;
+    background: white;
+    bottom: 1px;
+    border-radius: 5px;
+    z-index: 99;
 }

@@ -17,7 +17,9 @@
   font-family: seansProB;
   src: url("../fonts/SourceSansPro-Bold.otf"); }
 body {
-  background: white; }
+  background: white;
+  overflow-x: hidden;
+  width: 100%; }
 
 .header {
   background: #fff;
@@ -26,7 +28,7 @@ body {
   width: 100%; }
   .header .logo-principal {
     background-image: url("../img/logo.png");
-    width: 240px;
+    width: 200px;
     height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -56,7 +58,7 @@ body {
 .navbar {
   background-color: #5B3E89; }
   .navbar button {
-    border-color: transparent; }
+    border-color: transparent !important; }
     .navbar button .fa.fa-navicon {
       color: white; }
   .navbar .form-inline {
@@ -81,6 +83,13 @@ body {
 
 .container-fluid {
   font-family: AvenirR; }
+  .container-fluid #wrapper-section .carousel-indicators {
+    bottom: 0px;
+    margin: 5px; }
+    .container-fluid #wrapper-section .carousel-indicators li {
+      border-radius: 50%;
+      width: 8px;
+      height: 8px; }
   .container-fluid .item img {
     width: 100%; }
   .container-fluid .list-menu {
@@ -90,17 +99,19 @@ body {
     text-transform: uppercase;
     margin: 5px 0px; }
     .container-fluid .list-menu li {
-      background: #e7c0b4;
       margin-bottom: 1px;
       color: white; }
-  .container-fluid .club {
-    font-size: 14px;
-    color: white;
-    display: table;
-    height: 100%; }
-    .container-fluid .club p {
-      display: table-cell;
-      vertical-align: middle; }
+  .container-fluid .bg-orange-light {
+    width: 100%; }
+    .container-fluid .bg-orange-light .club {
+      font-size: 14px;
+      color: white;
+      height: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .container-fluid .box-sell {
     background: #EEF0F2;
     margin-bottom: 10px;
@@ -145,8 +156,7 @@ body {
     color: white;
     font-family: seansProR; }
     .container-fluid .box-info .bg-purple {
-      padding-top: 15px;
-      padding-bottom: 15px; }
+      padding: 15px 30px; }
       .container-fluid .box-info .bg-purple p {
         margin-bottom: 0px; }
         .container-fluid .box-info .bg-purple p.ico-phone {
@@ -161,6 +171,8 @@ body {
           background-position: left;
           background-repeat: no-repeat;
           padding-left: 25px; }
+      .container-fluid .box-info .bg-purple .separator {
+        bottom: -18px; }
     .container-fluid .box-info .box-pays {
       height: 100px; }
       .container-fluid .box-info .box-pays p {
@@ -170,23 +182,23 @@ body {
         color: white;
         margin-top: 12px; }
       .container-fluid .box-info .box-pays .icon-pago {
-        width: 70px;
+        width: 80px;
         height: 30px;
-        display: inline-block;
+        display: inline-flex;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        margin-bottom: 10px; }
+        margin-bottom: 20px; }
         .container-fluid .box-info .box-pays .icon-pago.visa {
-          background-image: url("../img/ico-visa.svg"); }
+          background-image: url("../img/visa.svg"); }
         .container-fluid .box-info .box-pays .icon-pago.paypal {
-          background-image: url("../img/ico-paypal.svg"); }
+          background-image: url("../img/paypal.svg"); }
         .container-fluid .box-info .box-pays .icon-pago.mastercard {
-          background-image: url("../img/ico-visa.svg"); }
+          background-image: url("../img/mastercard.svg"); }
         .container-fluid .box-info .box-pays .icon-pago.american {
-          background-image: url("../img/ico-american.svg"); }
+          background-image: url("../img/american.svg"); }
         .container-fluid .box-info .box-pays .icon-pago.oxxo {
-          background-image: url("../img/ico-oxxo.svg"); }
+          background-image: url("../img/oxxo.svg"); }
     .container-fluid .box-info .bg-orange p {
       margin-top: 10px; }
       .container-fluid .box-info .bg-orange p.letter-bold {
@@ -200,13 +212,23 @@ body {
       font-family: seansProR;
       color: #848484;
       padding: 15px;
-      margin-bottom: 10px; }
+      margin-bottom: 20px; }
     .container-fluid .box-info .bg-orange button {
       color: white;
-      padding: 20px;
+      padding: 10px;
       font-size: 16px;
       border-radius: 5px;
-      border: none; }
+      border: none;
+      bottom: 10px;
+      position: absolute;
+      width: 119px; }
+    .container-fluid .box-info .bg-orange .redes-sociales {
+      margin-bottom: 10px; }
+      .container-fluid .box-info .bg-orange .redes-sociales img {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        margin: 0px 4px; }
   .container-fluid .footer {
     color: #426084;
     font-size: 15px;
@@ -247,5 +269,16 @@ body {
   .carousel .round-icon span {
     width: 13px;
     height: 13px; }
+
+.separator {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 5px;
+  background: white;
+  bottom: 1px;
+  border-radius: 5px;
+  z-index: 99; }
 
 /*# sourceMappingURL=main.css.map */
