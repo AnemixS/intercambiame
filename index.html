@@ -19,7 +19,7 @@
       </div>
     </div/>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <form class="form-inline">
+      <form class="form-inline d-block d-sm-none">
         <input  type="search" placeholder="Buscar" aria-label="Search" class="form-control mr-sm-2 searching icon-search">
       </form>
       <button class="navbar-toggler" id="menu-general" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,23 +28,29 @@
       </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav float-left">
-          <li class="nav-item active">
+        <ul class="navbar-nav float-left button-box">
+          <li class="nav-item active orange-button">
             <a class="nav-link" href="#"><strong>INGRESAR </strong>CUENTA</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item orange-button">
             <a class="nav-link" href="#"><strong>COMIENZA </strong>A INTERCAMBIAR</a>
           </li>
         </ul>
-        <ul class="navbar-nav float-right">
+        <form class="form-inline d-none d-sm-block">
+          <input  type="search" placeholder="Buscar" aria-label="Search" class="form-control mr-sm-2 searching icon-search">
+        </form>
+        <div class="menu col-1 d-none d-sm-block">
+          <span class="ico-menu" onclick="showMenu()"></span>
+        </div>
+        <ul class="navbar-nav float-right principal-menu">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#"><span class="ico ico-home"></span>Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="changeView('premiame.html')">Prémiame</a>
+            <a class="nav-link" onclick="changeView('premiame.html')"><span class="ico ico-premiame"></span>Prémiame</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Prepago</a>
+            <a class="nav-link" href="#"><span class="ico ico-card"></span>Prepago</a>
           </li>
         </ul>
       </div>
@@ -52,7 +58,32 @@
     <div class="container-fluid">
       <div id="wrapper-section">
         <div class="row">
-          <div class="col-12 no-padding">
+          <div class="col-2 bg-orange-light d-sm-block d-none box-club">
+            <div class="col-4 col-md-12 bg-orange club">
+              <p>CLUBS DE<br> INTERCAMBIO</p>
+            </div>
+            <div class="col-4 col-md-12">
+              <ul class="list-menu">
+                <li>MODA Y ACCESORIOS</li>
+                <li>DEPORTE</li>
+                <li>AUTOPARTES</li>
+                <li>ELECTRÓNICA</li>
+                <li>HOGAR Y DECORACIÓN</li>
+                <li>COLECCIONISTAS</li>
+              </ul>
+            </div>
+            <div class="col-4 col-md-12">
+              <ul class="list-menu">
+                <li>VIDEOJUEGOS</li>
+                <li>MASCOTAS</li>
+                <li>LIBROS</li>
+                <li>COLECCIONISTAS</li>
+                <li>VENTAS DE GARAGE</li>
+                <li class="mt-4"><strong>CREA UN GRUPO</strong></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-10 no-padding">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -75,7 +106,7 @@
             </div>
           </div>
         </div>
-        <div class="row no-padding margin-b10">
+        <div class="row no-padding margin-b10 d-sm-none">
           <div class="bg-orange-light d-inline-flex">
             <div class="col-4 col-md-12 bg-orange club">
               <p>CLUBS DE<br> INTERCAMBIO</p>
@@ -102,11 +133,11 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-around d-none">
-          <button type="button" class="">Registrate y obtén 200 puntos</button>
-          <button type="button" class="">¿Qué es Intercambiame?</button>
-          <button type="button" class="">¿Cómo utilizo mis puntos?</button>
-          <button type="button" class="">¿Qué es prepago?</button>
+        <div class="row justify-content-around d-none d-sm-flex option-buttons">
+          <button type="button" class="bg-olive">Registrate y obtén 200 puntos</button>
+          <button type="button" class="bg-orange-light">¿Qué es Intercambiame?</button>
+          <button type="button" class="bg-purple">¿Cómo utilizo mis puntos?</button>
+          <button type="button" class="bg-olive-dark">¿Qué es prepago?</button>
         </div>
       </div>
       <div class="row box-sell">

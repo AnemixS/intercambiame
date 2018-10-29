@@ -11,6 +11,7 @@ body{
 	overflow-x: hidden;
 	width: 100%;
 }
+
 .header{
 	background: #fff;
 	height: 90px;
@@ -52,19 +53,21 @@ body{
 
 .navbar{
 	background-color: #5B3E89;
+	padding: 0px;
 	button{
 		border-color: transparent!important;
-		.fa.fa-navicon {
-		  color:white;
+		.navbar-toggler-icon{
+		  background-image: url("../img/menu.svg");
 		}
 	}
 	.form-inline{
 		width: 75%;
+		padding: 0px 10px;
 		.searching{
 			background-image: url(../img/buscador.png);
 		    background-position: right;
 		    background-size: 17px;
-		    height: 30px;
+		    height: 26px;
 		    background-repeat: no-repeat;
 		    font-family: AvenirR;
 		    font-size: 11px;
@@ -77,6 +80,68 @@ body{
 
 			::-ms-input-placeholder { /* Microsoft Edge */
 			    font-family: AvenirR;
+			}
+		}
+	}
+	.navbar-collapse{
+		background: #EEF0F2;
+		height: 110px;
+		.nav-link{
+		    color: rgba(255,255,255,1);
+		}
+		.button-box{
+			padding: 8px;
+			.orange-button{
+				background: #E47868;
+			    text-align: center;
+			    border-radius: 8px;
+			    margin: 5px;
+			    font-family: AvenirR;
+			    font-size: 12px;
+			    width: 100%;
+			    padding: 0px 5px;
+			}
+		}
+		.menu{
+			.ico-menu{
+				display: block;
+				background-image: url("../img/menu.svg");
+				background-repeat: no-repeat;
+				background-size: contain;
+				float: right;
+    			background-position: center;
+    			width: 30px;
+    			height: 30px;
+    			cursor: pointer;
+			}
+		}
+		.principal-menu{
+			background: #AEC65A;
+			position: absolute;
+		    right: 15px;
+		    padding: 0px 8px 8px 8px;
+		    border-bottom-left-radius: 8px;
+		    border-bottom-right-radius: 8px;
+			li{
+				height: 30px;
+				.ico{
+					display: inline-block;
+				    width: 20px;
+				    height: 20px;
+				    background-size: contain;
+				    margin: 0px 5px;
+				    background-repeat: no-repeat;
+				    vertical-align: bottom;
+					&.ico-home{
+						background-image: url("../img/home.svg");
+					}
+					&.ico-premiame{
+						background-image: url("../img/premiame.svg");
+					}
+					&.ico-card{
+						background-image: url("../img/card.svg");
+					}
+				}
 			}
 		}
 	}
@@ -101,6 +166,17 @@ body{
 		.banner{
 			height: 110px;
     		margin-bottom: 10px;
+		}
+		.option-buttons{
+			padding: 15px;
+			button{
+				color: white;
+			    font-size: 12px;
+			    padding: 4px 10px;
+			    width: auto;
+			    border: none;
+			    border-radius: 5px;
+			}
 		}
 	}
 	.item{
@@ -359,6 +435,12 @@ body{
 .bg-gray{
 	background: #E1E2E2;
 }
+.bg-olive{
+	background: #73AAAD;
+}
+.bg-olive-dark{
+	background: #36607C;
+}
 
 .carousel{
 	.round-icon{
@@ -383,4 +465,70 @@ body{
     bottom: 1px;
     border-radius: 5px;
     z-index: 99;
+}
+
+@media screen and (min-width: 768px){
+	.header{
+		padding: 20px;
+		height: 80px;
+		.logo-principal{
+			width: 415px;
+    		height: 50px;
+		}
+		.logo-car{
+			margin-top: 5px;
+			.circle-buy{
+				right: 15px;
+			}
+		}
+	}
+	.navbar{
+		.navbar-collapse{
+			background: transparent;
+			height: auto;
+			.form-inline{
+				input{
+					width: 80%;
+				    height: 35px;
+				    margin: auto;
+				    display: flex;
+				}
+			}
+			.principal-menu{
+				display: none;
+				width: 180px;
+			    height: auto;
+			    display: block;
+			    z-index: 99;
+			    top: 60px;
+			    right: 10px!important;
+			}
+		}
+		.button-box{
+			width: 50%;
+    		justify-content: space-around;
+    		.orange-button{
+    			width: 210px!important;
+    		}
+		}
+	}
+	.container-fluid{
+		.box-club{
+			padding: 0px;
+			.club{
+				height: 75px;
+    			justify-content: left;
+			}
+		}
+		.list-menu{
+			li{
+				margin-bottom: 5px;
+			}
+		}
+		.carousel-item{
+			img{
+				height: 340px;
+			}
+		}
+	}
 }

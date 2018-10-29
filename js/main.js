@@ -8,3 +8,12 @@ function changeView(nameView) {
             break;
     }
 }
+
+function showMenu(){
+	if($(".principal-menu").is(":visible")){
+		$(".principal-menu").hide()
+	}
+	else{
+		$(".principal-menu").show()
+	}
+}
