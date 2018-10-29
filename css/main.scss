@@ -219,118 +219,120 @@ body{
 			}
 		}
 	}
-	.box-info{
-		color: white;
-		font-family: seansProR;
-		.bg-purple{
-			padding: 15px 30px;
-			p{
-				margin-bottom: 0px;
-				&.ico-phone{
-					background-image: url("../img/ico-phone.png");
-					background-size: 20px;
-					background-position: left;
-					background-repeat: no-repeat;
-					padding-left: 25px;
-				}
-				&.ico-mail{
-					background-image: url("../img/ico-mail.png");
-					background-size: 20px;
-					background-position: left;
-					background-repeat: no-repeat;
-					padding-left: 25px;
-				}
+}
+
+.box-info{
+	color: white;
+	font-family: seansProR;
+	.bg-purple{
+		padding: 15px 30px;
+		p{
+			margin-bottom: 0px;
+			&.ico-phone{
+				background-image: url("../img/ico-phone.png");
+				background-size: 20px;
+				background-position: left;
+				background-repeat: no-repeat;
+				padding-left: 25px;
 			}
-			.separator{
-				bottom: -18px;
+			&.ico-mail{
+				background-image: url("../img/ico-mail.png");
+				background-size: 20px;
+				background-position: left;
+				background-repeat: no-repeat;
+				padding-left: 25px;
 			}
 		}
-		.box-pays{
-			height: 100px;
-			p{
-				font-family: seansProB;
-				font-size: 14px;
-				text-align: left;
-				color: white;
-				margin-top: 12px;
-			}
-			.icon-pago{
-				width: 80px;
-			    height: 30px;
-			    display: inline-flex;
-			    background-repeat: no-repeat;
-			    background-position: center;
-			    background-size: contain;
-			    margin-bottom: 20px;
-				&.visa{
-					background-image: url('../img/visa.svg');
-				}
-				&.paypal{
-					background-image: url('../img/paypal.svg');
-				}
-				&.mastercard{
-					background-image: url('../img/mastercard.svg');
-				}
-				&.american{
-					background-image: url('../img/american.svg');
-				}
-				&.oxxo{
-					background-image: url('../img/oxxo.svg');
-				}
-			}
-		}
-		.bg-orange{
-			p{
-				margin-top: 10px;
-				&.letter-bold{
-					font-family: seansProB;
-				}
-			}
-			.email-boletin{
-				height: 50px;
-				width: 100%;
-				background: white;
-				border: none!important;
-				border-radius: 5px;
-				font-family: seansProR;
-				color: #848484;
-				padding: 15px;
-				margin-bottom: 20px;
-			}
-			button{
-				color: white;
-			    padding: 10px;
-			    font-size: 16px;
-			    border-radius: 5px;
-			    border: none;
-			    bottom: 10px;
-			    position: absolute;
-			    width: 119px;
-    		}
-    		.redes-sociales{
-    			margin-bottom: 10px;
-			    img{
-	    			width:40px;
-	    			height:40px;
-	    			display: inline-flex;
-	    			margin: 0px 4px;
-	    		}
-    		}
+		.separator{
+			bottom: -18px;
 		}
 	}
-	.footer{
-		color: #426084;
-		font-size: 15px;
-		bottom: 0px;
-    	position: relative;
-    	width: 100%;
-    	p{
-    		width: 55%;
-    		margin: 10px auto;
-    		line-height: 1;
+	.box-pays{
+		height: 100px;
+		padding: 0px 30px;
+		p{
+			font-family: seansProB;
+			font-size: 14px;
+			text-align: left;
+			color: white;
+			margin-top: 12px;
+		}
+		.icon-pago{
+			width: 80px;
+			height: 30px;
+			display: inline-flex;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			margin-bottom: 20px;
+			&.visa{
+				background-image: url('../img/visa.svg');
+			}
+			&.paypal{
+				background-image: url('../img/paypal.svg');
+			}
+			&.mastercard{
+				background-image: url('../img/mastercard.svg');
+			}
+			&.american{
+				background-image: url('../img/american.svg');
+			}
+			&.oxxo{
+				background-image: url('../img/oxxo.svg');
+			}
+		}
+	}
+	.bg-orange{
+		padding: 0px 30px;
+		p{
+			margin-top: 10px;
+			&.letter-bold{
+				font-family: seansProB;
+			}
+		}
+		.email-boletin{
+			height: 50px;
+			width: 100%;
+			background: white;
+			border: none!important;
+			border-radius: 5px;
+			font-family: seansProR;
+			color: #848484;
+			padding: 15px;
+			margin-bottom: 20px;
+		}
+		button{
+			color: white;
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: none;
+			bottom: 10px;
+			position: absolute;
+			width: 119px;
+    	}
+    	.redes-sociales{
+    		margin-bottom: 10px;
+			img{
+	    		width:40px;
+	    		height:40px;
+	    		display: inline-flex;
+	    		margin: 0px 4px;
+	    	}
     	}
 	}
-	
+}
+.footer{
+	color: #426084;
+	font-size: 15px;
+	bottom: 0px;
+    position: relative;
+    width: 100%;
+    p{
+    	width: 55%;
+    	margin: 10px auto;
+    	line-height: 1;
+    }
 }
 .no-padding{
 	padding: 0px;
