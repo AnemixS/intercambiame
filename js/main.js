@@ -1,5 +1,8 @@
 function changeView(nameView) {
-    $(".principal-menu").hide()
+    if($(".menu").is(":visible")){
+        $(".principal-menu").hide()
+    }
+    
     switch (nameView) {
         case 'premiame.html':
             $("#wrapper-section").load("views/" + nameView)
