@@ -240,6 +240,8 @@ body{
 				color: black;
 				font-size: 10px!important;
 				text-align: left!important;
+				margin: auto;
+    			display: inline-block;
 				.circle{
 					background-image: url("../img/green-circle.png");
 					display: inline-block;
@@ -264,33 +266,27 @@ body{
 		}
 		.figure{
 			margin: auto;
-		    /* width: 100%;
-		    height: 100%; */
+		    display: inline-block;
+		    text-align: center;
+		    width: 40%;
+		    position: relative;
+		    left: 35px;
 			.img-fluid{
 				border: 3px solid #AEC65A;
 			    padding: 8px;
 			    background: #fff;
 			    width: 130px;
 			    height: 130px;
-			    margin-left: 0px;
-			    margin-right: 39px;
 			    display: flex;
+			    margin: auto;
 			}
 			.figure-caption{
 				font-family: AvenirM;
 				font-size: 12px;
 				text-align: center;
-				margin-left: 0px;
-			    margin-right: 39px;
 				span{
 					color: #AEC65A;
 					font-size: 15px;
-				}
-			}
-			&:first-of-type{
-				.img-fluid, .figure-caption{
-					margin-left: 39px!important;
-			    	margin-right: 0px!important;
 				}
 			}
 		}
@@ -530,5 +526,34 @@ body{
 				height: 340px;
 			}
 		}
+		.box-sell{
+			.figure{
+				width: 16%;
+				left: 100px;
+			}
+			&.bell{
+				.circle{
+					display: none!important;
+				}
+				.figure{
+					width: 20%;
+				}
+			}
+		}
+	}
+	.box-info{
+		.box-pays{
+			height: auto;
+		}
+	}
+	.footer{
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    height: 40px;
+	    p{
+	    	width: 100%;
+	    	font-size: 11px;
+	    }
 	}
 }
