@@ -147,6 +147,24 @@ body {
   .container-fluid #wrapper-section .banner {
     height: 110px;
     margin-bottom: 10px; }
+    .container-fluid #wrapper-section .banner .title {
+      position: absolute;
+      background: rgba(33, 33, 33, 0.2);
+      width: 100%;
+      height: 60px;
+      z-index: 999999;
+      bottom: 0px;
+      color: white;
+      font-size: 25px; }
+      .container-fluid #wrapper-section .banner .title .icon-premiame {
+        background-image: url(../img/premiame.svg);
+        background-repeat: no-repeat;
+        width: 15%;
+        height: 34px;
+        padding-left: 45px;
+        display: block;
+        margin-top: 10px;
+        float: right; }
   .container-fluid #wrapper-section .option-buttons {
     padding: 15px; }
     .container-fluid #wrapper-section .option-buttons button {
@@ -362,6 +380,8 @@ body {
 .bg-olive-dark {
   background: #36607C; }
 
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+  bottom: 30px; }
 .carousel .round-icon {
   background: gray;
   border-radius: 50%;
@@ -423,11 +443,25 @@ body {
       justify-content: left; }
   .container-fluid .list-menu li {
     margin-bottom: 5px; }
+  .container-fluid .carousel .round-icon {
+    width: 25px;
+    height: 25px; }
+    .container-fluid .carousel .round-icon span {
+      width: 20px;
+      height: 13px;
+      margin-top: 6px; }
   .container-fluid .carousel-item img {
     height: 340px; }
   .container-fluid .box-sell .figure {
     width: 16%;
-    left: 100px; }
+    left: 9%; }
+    .container-fluid .box-sell .figure .figure-caption {
+      text-align: left;
+      width: 180px;
+      margin: auto; }
+    .container-fluid .box-sell .figure .img-fluid {
+      width: 180px;
+      height: 180px; }
   .container-fluid .box-sell.bell .circle {
     display: none !important; }
   .container-fluid .box-sell.bell .figure {
@@ -443,6 +477,10 @@ body {
     height: 40px; }
     .footer p {
       width: 100%;
-      font-size: 11px; } }
+      font-size: 11px; }
+
+  .banner {
+    height: 250px !important;
+    position: relative; } }
 
 /*# sourceMappingURL=main.css.map */
