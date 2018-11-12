@@ -258,7 +258,6 @@ body{
 			.figure-caption{
 				font-family: AvenirM!important;
 				color: black;
-				font-size: 10px!important;
 				text-align: left!important;
 				margin: auto;
     			display: inline-block;
@@ -317,7 +316,7 @@ body{
 	color: white;
 	font-family: seansProR;
 	.bg-purple{
-		padding: 15px 30px;
+		padding: 15px 40px;
 		p{
 			margin-bottom: 0px;
 			&.ico-phone{
@@ -335,13 +334,10 @@ body{
 				padding-left: 25px;
 			}
 		}
-		.separator{
-			bottom: -18px;
-		}
 	}
 	.box-pays{
 		height: 100px;
-		padding: 0px 30px;
+		padding: 0px 40px;
 		p{
 			font-family: seansProB;
 			font-size: 14px;
@@ -375,7 +371,7 @@ body{
 		}
 	}
 	.bg-orange{
-		padding: 0px 30px;
+		padding: 0px 40px;
 		p{
 			margin-top: 10px;
 			&.letter-bold{
@@ -475,13 +471,13 @@ body{
 }
 
 .separator{
-	width: 95%;
+	width: 85%;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    position: absolute;
     height: 5px;
     background: white;
-    bottom: 1px;
+    bottom: -2px;
     border-radius: 5px;
     z-index: 99;
 }
@@ -578,8 +574,21 @@ body{
 				.circle{
 					display: none!important;
 				}
+				p{
+					font-size: 16px;
+				}
 				.figure{
 					width: 20%;
+					.img-fluid{
+						width: 200px;
+    					height: 200px;
+					}
+					.figure-caption{
+						width: 200px;
+						.precio{
+							font-size: 12px!important;
+						}
+					}
 				}
 			}
 		}
@@ -587,6 +596,22 @@ body{
 	.box-info{
 		.box-pays{
 			height: auto;
+		}
+		.bg-purple{
+			p{
+				margin-bottom: 0px;
+    			margin-left: 30px;
+			}
+		}
+		.bg-orange{
+			p, .social-box, input{
+				width: 80%!important;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.email-boletin{
+				margin-left: 35px;
+			}
 		}
 	}
 	.footer{
@@ -602,5 +627,19 @@ body{
 	.banner{
 		height: 250px!important;
 		position: relative;
+	}
+	.separator{
+		width: 6px;
+	    height: 75%;
+	    top: 35px;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	    left: -2px;
+	    &.right{
+			left: 93%;
+	    }
+	    &.left{
+			left: 30px;
+	    }
 	}
 }

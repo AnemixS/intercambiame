@@ -217,7 +217,6 @@ body {
       .container-fluid .box-sell.bell .figure-caption {
         font-family: AvenirM !important;
         color: black;
-        font-size: 10px !important;
         text-align: left !important;
         margin: auto;
         display: inline-block; }
@@ -265,7 +264,7 @@ body {
   color: white;
   font-family: seansProR; }
   .box-info .bg-purple {
-    padding: 15px 30px; }
+    padding: 15px 40px; }
     .box-info .bg-purple p {
       margin-bottom: 0px; }
       .box-info .bg-purple p.ico-phone {
@@ -280,11 +279,9 @@ body {
         background-position: left;
         background-repeat: no-repeat;
         padding-left: 25px; }
-    .box-info .bg-purple .separator {
-      bottom: -18px; }
   .box-info .box-pays {
     height: 100px;
-    padding: 0px 30px; }
+    padding: 0px 40px; }
     .box-info .box-pays p {
       font-family: seansProB;
       font-size: 14px;
@@ -310,7 +307,7 @@ body {
       .box-info .box-pays .icon-pago.oxxo {
         background-image: url("../img/oxxo.svg"); }
   .box-info .bg-orange {
-    padding: 0px 30px; }
+    padding: 0px 40px; }
     .box-info .bg-orange p {
       margin-top: 10px; }
       .box-info .bg-orange p.letter-bold {
@@ -392,13 +389,13 @@ body {
     height: 13px; }
 
 .separator {
-  width: 95%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  position: absolute;
   height: 5px;
   background: white;
-  bottom: 1px;
+  bottom: -2px;
   border-radius: 5px;
   z-index: 99; }
 
@@ -464,11 +461,29 @@ body {
       height: 180px; }
   .container-fluid .box-sell.bell .circle {
     display: none !important; }
+  .container-fluid .box-sell.bell p {
+    font-size: 16px; }
   .container-fluid .box-sell.bell .figure {
     width: 20%; }
+    .container-fluid .box-sell.bell .figure .img-fluid {
+      width: 200px;
+      height: 200px; }
+    .container-fluid .box-sell.bell .figure .figure-caption {
+      width: 200px; }
+      .container-fluid .box-sell.bell .figure .figure-caption .precio {
+        font-size: 12px !important; }
 
   .box-info .box-pays {
     height: auto; }
+  .box-info .bg-purple p {
+    margin-bottom: 0px;
+    margin-left: 30px; }
+  .box-info .bg-orange p, .box-info .bg-orange .social-box, .box-info .bg-orange input {
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto; }
+  .box-info .bg-orange .email-boletin {
+    margin-left: 35px; }
 
   .footer {
     display: flex;
@@ -481,6 +496,18 @@ body {
 
   .banner {
     height: 250px !important;
-    position: relative; } }
+    position: relative; }
+
+  .separator {
+    width: 6px;
+    height: 75%;
+    top: 35px;
+    margin-left: 0px;
+    margin-right: 0px;
+    left: -2px; }
+    .separator.right {
+      left: 93%; }
+    .separator.left {
+      left: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
